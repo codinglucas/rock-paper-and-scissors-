@@ -1,0 +1,11 @@
+import random
+comp = random.randint(1,3)
+print('1 = rock; 2 = scissors, 3 = paper')
+jg = int(input('valor de 1 - 3:'))
+
+if comp == jg:
+    print('empate')
+elif (comp == 1 and jg == 3) or (comp == 2 and jg == 1) or (comp == 3 and jg == 2):
+    print('você ganhou')
+else:
+    print('eu ganhei')
